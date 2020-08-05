@@ -39,6 +39,7 @@
 
       <!-- Inicio do Nome -->
       <div id="page-name" class="page">
+        <h1 class="h5 text-center p-2">Nome</h1>
 
         <div class="form-group">
           <label for="exampleInputEmail1">Nome</label>
@@ -51,10 +52,10 @@
 
       <!-- Inicio da Aparência -->
       <div id="page-appearance" class="page d-none">
-
+        <h1 class="h5 text-center p-2">Aparência</h1>
         <div class="form-group">
           <label for="gender">Gênero</label>
-          <select id="gender">
+          <select id="gender" class="form-control">
             <option>Homem</option>
             <option>Mulher</option>
             <option>Andrógino</option>
@@ -63,7 +64,7 @@
 
         <div class="form-group">
           <label for="eyes">Olhos</label>
-          <select id="eyes">
+          <select id="eyes" class="form-control">
             <option>Sombrios</option>
             <option>Ferozes</option>
             <option>Cansados</option>
@@ -73,7 +74,7 @@
 
         <div class="form-group">
           <label for="clothes">Olhos</label>
-          <select id="clothes">
+          <select id="clothes" class="form-control">
             <option>Amarrotadas</option>
             <option>Estilosas</option>
             <option>Góticas</option>
@@ -87,44 +88,118 @@
       <!-- Inicio da Classificação -->
       <div id="page-classification" class="page d-none">
 
+        <h1 class="h5 text-center p-2">Classificação</h1>
+
         <div class="custom-control custom-radio">
-          <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-          <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
+          <input type="radio" id="classification-opt-1" name="customRadio" class="custom-control-input">
+          <label class="custom-control-label" for="classification-opt-1">Braveza ±0, Esperteza +1, Estranheza +2, Firmeza +1, Sutileza −1</label>
         </div>
 
-        <div class="form-group">
-          <label for="gender">Braveza ±0, Esperteza +1, Estranheza +2, Firmeza +1, Sutileza −1</label>
-          <input type="radio">
+        <div class="custom-control custom-radio">
+          <input type="radio" id="classification-opt-2" name="customRadio" class="custom-control-input">
+          <label class="custom-control-label" for="classification-opt-2">Braveza +1, Esperteza +1, Estranheza +2, Firmeza −1, Sutileza ±0</label>
+        </div>
+
+        <div class="custom-control custom-radio">
+          <input type="radio" id="classification-opt-3" name="customRadio" class="custom-control-input">
+          <label class="custom-control-label" for="classification-opt-3">Braveza −1, Esperteza +2, Estranheza +2, Firmeza ±0, Sutileza −1</label>
+        </div>
+
+        <div class="custom-control custom-radio">
+          <input type="radio" id="classification-opt-4" name="customRadio" class="custom-control-input">
+          <label class="custom-control-label" for="classification-opt-4">Braveza −1, Esperteza +1, Estranheza +2, Firmeza ±0, Sutileza +1</label>
+        </div>
+
+        <div class="custom-control custom-radio">
+          <input type="radio" id="classification-opt-5" name="customRadio" class="custom-control-input">
+          <label class="custom-control-label" for="classification-opt-5">Braveza ±0, Esperteza +1, Estranheza +2, Firmeza ±0, Sutileza ±0</label>
         </div>
 
       </div>
 
       <!-- Inicio da Magia Combativa -->
       <div id="page-combative-spell" class="page d-none">
+        
+        <h1 class="h5 text-center p-2">Magia Combativa</h1>
 
-        <div class="custom-control custom-radio">
-          <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-          <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
+        <h2 class="h6">Bases</h2>
+
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="combative-spell-explosion">
+          <label class="form-check-label" for="combative-spell-explosion">Explosão [2-dano perto mágica chamativa barulhenta]</label>
         </div>
 
-        <div class="form-group">
-          <label for="gender">Braveza ±0, Esperteza +1, Estranheza +2, Firmeza +1, Sutileza −1</label>
-          <input type="radio">
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="combative-spell-ball">
+          <label class="form-check-label" for="combative-spell-ball">Bola [1-dano perto área mágica chamativa barulhenta]</label>
         </div>
+
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="combative-spell-missile">
+          <label class="form-check-label" for="combative-spell-missile">Míssil [1-dano longe mágica chamativa barulhenta]</label>
+        </div>
+
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="combative-spell-wall">
+          <label class="form-check-label" for="combative-spell-wall">Muralha [1-dano perto barreira 1-armadura mágica
+            chamativa barulhenta]</label>
+        </div>
+
+        <h2 class="h6">Efeitos</h2>
+
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="combative-spell-fire">
+          <label class="form-check-label" for="combative-spell-fire">Fogo: Adicione +2 de dano e [fogo] para uma base. Com
+            10+ em uma rolagem de magia combativa, o fogo não
+            via se espalhar.</label>
+        </div>
+
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="combative-spell-strength">
+          <label class="form-check-label" for="combative-spell-strength">Força ou Vento: Adicione +1 de dano e [empurrão] para
+            uma base; ou +1 de armadura para uma muralha.</label>
+        </div>
+
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="combative-spell-bolt">
+          <label class="form-check-label" for="combative-spell-bolt">Raio ou Entropia: Adicione +1 de dano e [brutal] para
+            uma base.</label>
+        </div>
+
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="combative-spell-ice">
+          <label class="form-check-label" for="combative-spell-ice">Frio ou Gelo: Adicione −1 de dano e +2 de armadura
+            para uma muralha; ou +1 de dano e [restritiva] para outras bases.</label>
+        </div>
+
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="combative-spell-earth">
+          <label class="form-check-label" for="combative-spell-earth">Terra: Adicione [empurrão restritiva] para uma base.</label>
+        </div>
+
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="combative-spell-necromance">
+          <label class="form-check-label" for="combative-spell-necromance">Necromântica: Adicione [drena-vida] para uma base.</label>
+        </div>
+        
 
       </div>
 
       <!-- Inicio dos Movimentos -->
       <div id="page-moves" class="page d-none">
+        <h1 class="h5 text-center p-2">Movimentos</h1>
 
-        <div class="custom-control custom-radio">
-          <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-          <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="move-master-spell">
+          <label class="form-check-label" for="move-master-spell">Treinamento mágico avançado: Se você tiver duas de suas
+            três Ferramentas e técnicas à disposição, você pode ignorar
+            a terceira.</label>
         </div>
 
-        <div class="form-group">
-          <label for="gender">Braveza ±0, Esperteza +1, Estranheza +2, Firmeza +1, Sutileza −1</label>
-          <input type="radio">
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="move-master-spell">
+          <label class="form-check-label" for="move-master-spell">Frio ou Gelo: Adicione −1 de dano e +2 de armadura
+            para uma muralha; ou +1 de dano e [restritiva] para outras bases.</label>
         </div>
 
       </div>
@@ -144,8 +219,10 @@
 
       </div>
 
-      <button id="btn-random" type="submit" class="btn btn-primary">Random</button>
+      <button id="btn-random" type="submit" class="btn btn-secondary">Random</button>
+      <button id="btn-previous" type="submit" class="btn btn-primary d-none">Anterior</button>
       <button id="btn-next" type="submit" class="btn btn-primary">Próximo</button>
+      
     </form>
   </main>
 
