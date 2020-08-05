@@ -1,45 +1,167 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Arcano</title>
-  </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Arcano</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sobre</a>
-            </li>
-          </ul>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+    integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+
+  <title>Arcano</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Arcano</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sobre</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <form>
+
+      <!-- Inicio do Nome -->
+      <div id="page-name" class="page">
+
+        <div class="form-group">
+          <label for="exampleInputEmail1">Nome</label>
+          <input type="text" class="form-control" id="name" aria-describedby="name">
+          <small id="name" class="form-text text-muted">Digite o nome do seu personagem.</small>
         </div>
-      </nav>
-    </header>
-      
-      
-    
-    
-    
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
-  </body>
+      </div>
+      <!-- Fim do Nome -->
+
+      <!-- Inicio da Aparência -->
+      <div id="page-appearance" class="page d-none">
+
+        <div class="form-group">
+          <label for="gender">Gênero</label>
+          <select id="gender">
+            <option>Homem</option>
+            <option>Mulher</option>
+            <option>Andrógino</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="eyes">Olhos</label>
+          <select id="eyes">
+            <option>Sombrios</option>
+            <option>Ferozes</option>
+            <option>Cansados</option>
+            <option>Faiscantes</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="clothes">Olhos</label>
+          <select id="clothes">
+            <option>Amarrotadas</option>
+            <option>Estilosas</option>
+            <option>Góticas</option>
+            <option>Antiquadas</option>
+          </select>
+        </div>
+      </div>
+      <!-- Fim da Aparência -->
+
+
+      <!-- Inicio da Classificação -->
+      <div id="page-classification" class="page d-none">
+
+        <div class="custom-control custom-radio">
+          <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+          <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
+        </div>
+
+        <div class="form-group">
+          <label for="gender">Braveza ±0, Esperteza +1, Estranheza +2, Firmeza +1, Sutileza −1</label>
+          <input type="radio">
+        </div>
+
+      </div>
+
+      <!-- Inicio da Magia Combativa -->
+      <div id="page-combative-spell" class="page d-none">
+
+        <div class="custom-control custom-radio">
+          <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+          <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
+        </div>
+
+        <div class="form-group">
+          <label for="gender">Braveza ±0, Esperteza +1, Estranheza +2, Firmeza +1, Sutileza −1</label>
+          <input type="radio">
+        </div>
+
+      </div>
+
+      <!-- Inicio dos Movimentos -->
+      <div id="page-moves" class="page d-none">
+
+        <div class="custom-control custom-radio">
+          <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+          <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
+        </div>
+
+        <div class="form-group">
+          <label for="gender">Braveza ±0, Esperteza +1, Estranheza +2, Firmeza +1, Sutileza −1</label>
+          <input type="radio">
+        </div>
+
+      </div>
+
+      <!-- Inicio dos Equipamentos -->
+      <div id="page-equipments" class="page d-none">
+
+        <div class="custom-control custom-radio">
+          <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+          <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
+        </div>
+
+        <div class="form-group">
+          <label for="gender">Braveza ±0, Esperteza +1, Estranheza +2, Firmeza +1, Sutileza −1</label>
+          <input type="radio">
+        </div>
+
+      </div>
+
+      <button id="btn-random" type="submit" class="btn btn-primary">Random</button>
+      <button id="btn-next" type="submit" class="btn btn-primary">Próximo</button>
+    </form>
+  </main>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js"
+    integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J"
+    crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
