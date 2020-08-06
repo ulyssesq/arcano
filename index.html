@@ -145,16 +145,16 @@
 
         <div class="btn-group btn-group-toggle combative-spell" data-toggle="buttons">
           <label class="btn btn-secondary active">
-            <input type="radio" name="eyes" id="dark"> Explosão [2-dano perto mágica chamativa barulhenta]
+            <input type="radio" name="combative-spell-base" id="dark"> Explosão [2-dano perto mágica chamativa barulhenta]
           </label>
           <label class="btn btn-secondary">
-            <input type="radio" name="eyes" id="fierce"> Bola [1-dano perto área mágica chamativa barulhenta]
+            <input type="radio" name="combative-spell-base" id="fierce"> Bola [1-dano perto área mágica chamativa barulhenta]
           </label>
           <label class="btn btn-secondary">
-            <input type="radio" name="eyes" id="tired"> Míssil [1-dano longe mágica chamativa barulhenta]
+            <input type="radio" name="combative-spell-base" id="tired"> Míssil [1-dano longe mágica chamativa barulhenta]
           </label>
           <label class="btn btn-secondary">
-            <input type="radio" name="eyes" id="sparkling"> Muralha [1-dano perto barreira 1-armadura mágica
+            <input type="radio" name="combative-spell-base" id="sparkling"> Muralha [1-dano perto barreira 1-armadura mágica
             chamativa barulhenta]
           </label>
         </div>
@@ -163,27 +163,27 @@
 
         <div class="btn-group btn-group-toggle combative-spell" data-toggle="buttons">
           <label class="btn btn-secondary active">
-            <input type="radio" name="eyes" id="dark"> Fogo: Adicione +2 de dano e [fogo] para uma base. Com
+            <input type="radio" name="combative-spell-effect" id="dark"> Fogo: Adicione +2 de dano e [fogo] para uma base. Com
             10+ em uma rolagem de magia combativa, o fogo não
             via se espalhar.
           </label>
           <label class="btn btn-secondary">
-            <input type="radio" name="eyes" id="fierce"> Força ou Vento: Adicione +1 de dano e [empurrão] para
+            <input type="radio" name="combative-spell-effect" id="fierce"> Força ou Vento: Adicione +1 de dano e [empurrão] para
             uma base; ou +1 de armadura para uma muralha.
           </label>
           <label class="btn btn-secondary">
-            <input type="radio" name="eyes" id="tired"> Raio ou Entropia: Adicione +1 de dano e [brutal] para
+            <input type="radio" name="combative-spell-effect" id="tired"> Raio ou Entropia: Adicione +1 de dano e [brutal] para
             uma base.
           </label>
           <label class="btn btn-secondary">
-            <input type="radio" name="eyes" id="sparkling"> Frio ou Gelo: Adicione −1 de dano e +2 de armadura
+            <input type="radio" name="combative-spell-effect" id="sparkling"> Frio ou Gelo: Adicione −1 de dano e +2 de armadura
             para uma muralha; ou +1 de dano e [restritiva] para outras bases.
           </label>
           <label class="btn btn-secondary">
-            <input type="radio" name="eyes" id="sparkling"> Terra: Adicione [empurrão restritiva] para uma base.
+            <input type="radio" name="combative-spell-effect" id="sparkling"> Terra: Adicione [empurrão restritiva] para uma base.
           </label>
           <label class="btn btn-secondary">
-            <input type="radio" name="eyes" id="sparkling"> Necromântica: Adicione [drena-vida] para uma base.
+            <input type="radio" name="combative-spell-effect" id="sparkling"> Necromântica: Adicione [drena-vida] para uma base.
           </label>
         </div>
         
@@ -271,36 +271,37 @@
             dura na mente!</label>
         </div>
 
-      </div>
+      </div>      
 
       <!-- Inicio dos Equipamentos -->
       <div id="page-equipments" class="page d-none">
+
+        <h1 class="h5 text-center p-2">Equipamentos</h1>
+
+        <div class="btn-group btn-group-toggle equipment" data-toggle="buttons">
+          <label class="btn btn-secondary active">
+            <input type="radio" name="equipment" id="gun"> Revólver velho [2-dano perto recarga barulhenta]
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="equipment" id="knife"> Faca ritualística [1-dano contato]
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="equipment" id="sword"> Espada herdada [2-dano contato brutal]
+          </label>
+        </div>
+
+      </div>
+
+      <!-- Inicio dos Apresentação -->
+      <div id="page-introducing" class="page d-none">
         <h1 class="h5 text-center p-2">Apresentação</h1>
 
         <div>
+          <p>Minha idéia era mostrar os pontos naqueles gráficos teia de aranha, mas não consegui terminar a tempo.</p>
+          <a href="https://www.researchgate.net/profile/Avelino_Gomes_Filho/publication/308607788/figure/fig18/AS:410288408023046@1474831787679/Figura-44-Grafico-de-Teia-de-Aranha-sobre-o-desempenho-de-aplicacao-de-conhecimento-em.png">Seria assim</a>
 
         </div>
 
-
-      </div>
-
-      <!-- Inicio dos Equipamentos -->
-      <div id="page-equipments" class="page d-none">
-
-        <div class="custom-control custom-radio">
-          <input type="radio" id="equipment-gun" name="equipment" class="custom-control-input">
-          <label class="custom-control-label" for="equipment-gun">Revólver velho [2-dano perto recarga barulhenta]</label>
-        </div>
-
-        <div class="custom-control custom-radio">
-          <input type="radio" id="equipment-knife" name="equipment" class="custom-control-input">
-          <label class="custom-control-label" for="equipment-knife">Faca ritualística [1-dano contato]</label>
-        </div>
-
-        <div class="custom-control custom-radio">
-          <input type="radio" id="equipment-sword" name="equipment" class="custom-control-input">
-          <label class="custom-control-label" for="equipment-sword">Espada herdada [2-dano contato brutal]</label>
-        </div>
 
       </div>
 

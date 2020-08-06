@@ -35,7 +35,9 @@ body {
     font-weight: bold;
 }
 
-.btn-group-toggle.btn-group.combative-spell {
+/* Professor desculpa, eu ia tirar o bootstrap e usar BEM bonitinho, 
+acabei tendo que fazer essas gambiarras no CSS para sobrescrever a hierarquia */
+.btn-group-toggle.btn-group.combative-spell,  .btn-group-toggle.btn-group.equipment {
     display: grid;
     grid-template-columns:1fr;
 }
