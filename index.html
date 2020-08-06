@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
     integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
 
+  <link rel="stylesheet" href="css/main.css">
   <title>Arcano</title>
 </head>
 
@@ -28,7 +29,7 @@
             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Sobre</a>
+            <a class="nav-link" href="about.html">Sobre</a>
           </li>
         </ul>
       </div>
@@ -50,36 +51,61 @@
       </div>
       <!-- Fim do Nome -->
 
+      
+
       <!-- Inicio da Aparência -->
       <div id="page-appearance" class="page d-none">
         <h1 class="h5 text-center p-2">Aparência</h1>
+
         <div class="form-group">
-          <label for="gender">Gênero</label>
-          <select id="gender" class="form-control">
-            <option>Homem</option>
-            <option>Mulher</option>
-            <option>Andrógino</option>
-          </select>
+          <label for="gender" class="d-block">Gênero</label>
+          <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-secondary active">
+              <input type="radio" name="gender" id="man"> Homem
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="gender" id="woman"> Mulher
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="gender" id="androgen"> Andrógino
+            </label>
+          </div>
         </div>
 
         <div class="form-group">
-          <label for="eyes">Olhos</label>
-          <select id="eyes" class="form-control">
-            <option>Sombrios</option>
-            <option>Ferozes</option>
-            <option>Cansados</option>
-            <option>Faiscantes</option>
-          </select>
+          <label for="eyes" class="d-block">Olhos</label>
+          <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-secondary active">
+              <input type="radio" name="eyes" id="dark"> Sombrios
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="eyes" id="fierce"> Ferozes
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="eyes" id="tired"> Cansados
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="eyes" id="sparkling"> Faiscantes
+            </label>
+          </div>
         </div>
 
         <div class="form-group">
-          <label for="clothes">Olhos</label>
-          <select id="clothes" class="form-control">
-            <option>Amarrotadas</option>
-            <option>Estilosas</option>
-            <option>Góticas</option>
-            <option>Antiquadas</option>
-          </select>
+          <label for="clothes" class="d-block">Roupas</label>
+          <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-secondary active">
+              <input type="radio" name="eyes" id="dark"> Amarrotadas
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="eyes" id="fierce"> Estilosas
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="eyes" id="tired"> Góticas
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="eyes" id="sparkling"> Antiquadas
+            </label>
+          </div>
         </div>
       </div>
       <!-- Fim da Aparência -->
@@ -90,29 +116,22 @@
 
         <h1 class="h5 text-center p-2">Classificação</h1>
 
-        <div class="custom-control custom-radio">
-          <input type="radio" id="classification-opt-1" name="customRadio" class="custom-control-input">
-          <label class="custom-control-label" for="classification-opt-1">Braveza ±0, Esperteza +1, Estranheza +2, Firmeza +1, Sutileza −1</label>
-        </div>
-
-        <div class="custom-control custom-radio">
-          <input type="radio" id="classification-opt-2" name="customRadio" class="custom-control-input">
-          <label class="custom-control-label" for="classification-opt-2">Braveza +1, Esperteza +1, Estranheza +2, Firmeza −1, Sutileza ±0</label>
-        </div>
-
-        <div class="custom-control custom-radio">
-          <input type="radio" id="classification-opt-3" name="customRadio" class="custom-control-input">
-          <label class="custom-control-label" for="classification-opt-3">Braveza −1, Esperteza +2, Estranheza +2, Firmeza ±0, Sutileza −1</label>
-        </div>
-
-        <div class="custom-control custom-radio">
-          <input type="radio" id="classification-opt-4" name="customRadio" class="custom-control-input">
-          <label class="custom-control-label" for="classification-opt-4">Braveza −1, Esperteza +1, Estranheza +2, Firmeza ±0, Sutileza +1</label>
-        </div>
-
-        <div class="custom-control custom-radio">
-          <input type="radio" id="classification-opt-5" name="customRadio" class="custom-control-input">
-          <label class="custom-control-label" for="classification-opt-5">Braveza ±0, Esperteza +1, Estranheza +2, Firmeza ±0, Sutileza ±0</label>
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+          <label class="btn btn-secondary active">
+            <input type="radio" name="eyes" id="dark"> Braveza ±0, Esperteza +1, Estranheza +2, Firmeza +1, Sutileza −1
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="eyes" id="fierce"> Braveza +1, Esperteza +1, Estranheza +2, Firmeza −1, Sutileza ±0
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="eyes" id="tired"> Braveza −1, Esperteza +2, Estranheza +2, Firmeza ±0, Sutileza −1
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="eyes" id="sparkling"> Braveza −1, Esperteza +1, Estranheza +2, Firmeza ±0, Sutileza +1
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="eyes" id="sparkling"> Braveza ±0, Esperteza +1, Estranheza +2, Firmeza ±0, Sutileza ±0
+          </label>
         </div>
 
       </div>
@@ -124,65 +143,50 @@
 
         <h2 class="h6">Bases</h2>
 
-        <div class="form-group form-check">
-          <input type="checkbox" class="form-check-input" id="combative-spell-explosion">
-          <label class="form-check-label" for="combative-spell-explosion">Explosão [2-dano perto mágica chamativa barulhenta]</label>
-        </div>
-
-        <div class="form-group form-check">
-          <input type="checkbox" class="form-check-input" id="combative-spell-ball">
-          <label class="form-check-label" for="combative-spell-ball">Bola [1-dano perto área mágica chamativa barulhenta]</label>
-        </div>
-
-        <div class="form-group form-check">
-          <input type="checkbox" class="form-check-input" id="combative-spell-missile">
-          <label class="form-check-label" for="combative-spell-missile">Míssil [1-dano longe mágica chamativa barulhenta]</label>
-        </div>
-
-        <div class="form-group form-check">
-          <input type="checkbox" class="form-check-input" id="combative-spell-wall">
-          <label class="form-check-label" for="combative-spell-wall">Muralha [1-dano perto barreira 1-armadura mágica
-            chamativa barulhenta]</label>
+        <div class="btn-group btn-group-toggle combative-spell" data-toggle="buttons">
+          <label class="btn btn-secondary active">
+            <input type="radio" name="eyes" id="dark"> Explosão [2-dano perto mágica chamativa barulhenta]
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="eyes" id="fierce"> Bola [1-dano perto área mágica chamativa barulhenta]
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="eyes" id="tired"> Míssil [1-dano longe mágica chamativa barulhenta]
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="eyes" id="sparkling"> Muralha [1-dano perto barreira 1-armadura mágica
+            chamativa barulhenta]
+          </label>
         </div>
 
         <h2 class="h6">Efeitos</h2>
 
-        <div class="form-group form-check">
-          <input type="checkbox" class="form-check-input" id="combative-spell-fire">
-          <label class="form-check-label" for="combative-spell-fire">Fogo: Adicione +2 de dano e [fogo] para uma base. Com
+        <div class="btn-group btn-group-toggle combative-spell" data-toggle="buttons">
+          <label class="btn btn-secondary active">
+            <input type="radio" name="eyes" id="dark"> Fogo: Adicione +2 de dano e [fogo] para uma base. Com
             10+ em uma rolagem de magia combativa, o fogo não
-            via se espalhar.</label>
-        </div>
-
-        <div class="form-group form-check">
-          <input type="checkbox" class="form-check-input" id="combative-spell-strength">
-          <label class="form-check-label" for="combative-spell-strength">Força ou Vento: Adicione +1 de dano e [empurrão] para
-            uma base; ou +1 de armadura para uma muralha.</label>
-        </div>
-
-        <div class="form-group form-check">
-          <input type="checkbox" class="form-check-input" id="combative-spell-bolt">
-          <label class="form-check-label" for="combative-spell-bolt">Raio ou Entropia: Adicione +1 de dano e [brutal] para
-            uma base.</label>
-        </div>
-
-        <div class="form-group form-check">
-          <input type="checkbox" class="form-check-input" id="combative-spell-ice">
-          <label class="form-check-label" for="combative-spell-ice">Frio ou Gelo: Adicione −1 de dano e +2 de armadura
-            para uma muralha; ou +1 de dano e [restritiva] para outras bases.</label>
-        </div>
-
-        <div class="form-group form-check">
-          <input type="checkbox" class="form-check-input" id="combative-spell-earth">
-          <label class="form-check-label" for="combative-spell-earth">Terra: Adicione [empurrão restritiva] para uma base.</label>
-        </div>
-
-        <div class="form-group form-check">
-          <input type="checkbox" class="form-check-input" id="combative-spell-necromance">
-          <label class="form-check-label" for="combative-spell-necromance">Necromântica: Adicione [drena-vida] para uma base.</label>
+            via se espalhar.
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="eyes" id="fierce"> Força ou Vento: Adicione +1 de dano e [empurrão] para
+            uma base; ou +1 de armadura para uma muralha.
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="eyes" id="tired"> Raio ou Entropia: Adicione +1 de dano e [brutal] para
+            uma base.
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="eyes" id="sparkling"> Frio ou Gelo: Adicione −1 de dano e +2 de armadura
+            para uma muralha; ou +1 de dano e [restritiva] para outras bases.
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="eyes" id="sparkling"> Terra: Adicione [empurrão restritiva] para uma base.
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="eyes" id="sparkling"> Necromântica: Adicione [drena-vida] para uma base.
+          </label>
         </div>
         
-
       </div>
 
       <!-- Inicio dos Movimentos -->
@@ -197,10 +201,86 @@
         </div>
 
         <div class="form-group form-check">
-          <input type="checkbox" class="form-check-input" id="move-master-spell">
-          <label class="form-check-label" for="move-master-spell">Frio ou Gelo: Adicione −1 de dano e +2 de armadura
-            para uma muralha; ou +1 de dano e [restritiva] para outras bases.</label>
+          <input type="checkbox" class="form-check-input" id="move-magic-reputation">
+          <label class="form-check-label" for="move-magic-reputation">Reputação mágica: Escolha três grandes grupos ou organiza-
+            ções da comunidade sobrenatural, o que pode incluir alguns
+            dos tipos mais sociáveis de monstros. Eles ouviram falar você
+            e respeitam seu poder. Com humanos afetados, receba +1 adiante para manipular alguém. Você pode usar manipular alguém em monstros afetados como se eles fossem humanos,
+            mas sem bônus.</label>
         </div>
+
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="move-magic-robe">
+          <label class="form-check-label" for="move-magic-robe">Vestuário encantado: Escolha uma peça de vestuário do dia a
+            dia — ela está encantada sem nenhuma alteração na aparência.
+            Receba 1 de dano a menos de qualquer coisa que tentar te acertar através da peça de roupa.</label>
+        </div>
+
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="move-could-be-worse">
+          <label class="form-check-label" for="move-could-be-worse">Poderia ser pior: Quando você falhar em uma rolagem
+            para usar magia você pode usar uma das seguintes op-
+            ções em vez de perder o controle da magia:
+            <ul>
+               <li>Fiasco: As preparações e materiais para o feitiço foram arruinados. Você terá que começar do zero
+                com o tempo de preparação dobrado.</li>
+                <li>Isso não vai ser bom: O efeito acontece, mas você aciona todos os defeitos listados menos um. Você escolhe qual defeito vai evitar.</li>
+            </ul>
+        </div>
+
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="move-predict">
+          <label class="form-check-label" for="move-predict">Adivinhação forense: Quando você investigar um
+            mistério com sucesso, você pode perguntar “Que magia foi feita aqui?” como uma pergunta extra e gratuita.</label>
+        </div>
+
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="move-gogo">
+          <label class="form-check-label" for="move-gogo">Vá com tudo ou vá pra casa: Quando você precisar
+            usar magia como um requisito de magia grandiosa,
+            receba +1 constante nestas rolagens de usar magia.</label>
+        </div>
+
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="move-not-guilty">
+          <label class="form-check-label" for="move-not-guilty">Não é minha culpa: Receba +1 para agir sob pressão
+            quando estiver lidando com as consequências dos seus
+            próprios feitiços.</label>
+        </div>
+
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="move-trainee">
+          <label class="form-check-label" for="move-trainee">Praticante: Escolha dois efeitos dos disponíveis de
+            usar magia. Receba +1 para usar magia sempre que escolher um destes efeitos.</label>
+        </div>
+
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="move-magic-shield">
+          <label class="form-check-label" for="move-magic-shield">Escudo mágico: Quando você proteger alguém, você
+            recebe [2-armadura] contra qualquer dano que seja
+            transferido para você. Isto não acumula com outras armaduras, se houver.</label>
+        </div>
+
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="move-third-eye">
+          <label class="form-check-label" for="move-third-eye">Terceiro olho: Quando você perceber uma enrascada,
+            você pode abrir seu terceiro olho por um momento
+            para perceber informações extras. Receba +1 de reserva
+            em qualquer resultado 7 ou maior, você também consegue enxergar coisas invisíveis. Com uma falha, você
+            ainda pode reservar 1, mas você está exposto aos perigos sobrenaturais. A totalidade da realidade oculta é
+            dura na mente!</label>
+        </div>
+
+      </div>
+
+      <!-- Inicio dos Equipamentos -->
+      <div id="page-equipments" class="page d-none">
+        <h1 class="h5 text-center p-2">Apresentação</h1>
+
+        <div>
+
+        </div>
+
 
       </div>
 
@@ -208,20 +288,28 @@
       <div id="page-equipments" class="page d-none">
 
         <div class="custom-control custom-radio">
-          <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-          <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
+          <input type="radio" id="equipment-gun" name="equipment" class="custom-control-input">
+          <label class="custom-control-label" for="equipment-gun">Revólver velho [2-dano perto recarga barulhenta]</label>
         </div>
 
-        <div class="form-group">
-          <label for="gender">Braveza ±0, Esperteza +1, Estranheza +2, Firmeza +1, Sutileza −1</label>
-          <input type="radio">
+        <div class="custom-control custom-radio">
+          <input type="radio" id="equipment-knife" name="equipment" class="custom-control-input">
+          <label class="custom-control-label" for="equipment-knife">Faca ritualística [1-dano contato]</label>
+        </div>
+
+        <div class="custom-control custom-radio">
+          <input type="radio" id="equipment-sword" name="equipment" class="custom-control-input">
+          <label class="custom-control-label" for="equipment-sword">Espada herdada [2-dano contato brutal]</label>
         </div>
 
       </div>
 
-      <button id="btn-random" type="submit" class="btn btn-secondary">Random</button>
-      <button id="btn-previous" type="submit" class="btn btn-primary d-none">Anterior</button>
-      <button id="btn-next" type="submit" class="btn btn-primary">Próximo</button>
+      <div class="btn-wrapper">
+        <!-- <button id="btn-random" type="submit" class="btn btn-secondary">Random</button> -->
+        <button id="btn-next" type="submit" class="btn btn-dark">Próximo</button>
+        <button id="btn-previous" type="submit" class="btn btn-outline-dark d-none">Voltar</button>
+      </div>
+      
       
     </form>
   </main>

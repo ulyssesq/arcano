@@ -1,4 +1,41 @@
+body {
+    background: #eee;
+}
+
 .logo-subtitle {
     font-size: 0.4em;
     font-variant: all-small-caps;
+}
+
+.page, .btn-wrapper {
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 10px;
+}
+
+.btn-wrapper {
+    margin: 20px;
+}
+
+.btn-group-toggle.btn-group {
+    display: grid;
+    vertical-align: middle;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+}
+
+.btn-wrapper {
+    display: grid;
+    grid-gap: 5px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.page label {
+    font-weight: bold;
+}
+
+.btn-group-toggle.btn-group.combative-spell {
+    display: grid;
+    grid-template-columns:1fr;
 }
